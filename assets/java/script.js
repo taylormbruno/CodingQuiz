@@ -6,22 +6,26 @@ var highScores = document.getElementById("highscores");
 var timer = document.getElementById("time");
 var questPage = document.getElementById("questPage");
 var question = document.getElementById("question");
-// var choice0 = document.getElementById("choice0");
-var btn1 = document.getElementById("btn1");
-var btn2 = document.getElementById("btn2");
-var btn3 = document.getElementById("btn3");
+var choice0 = document.getElementById("choice0");
+var choice1 = document.getElementById("choice1");
+var choice2 = document.getElementById("choice2");
+var choice3 = document.getElementById("choice3");
 
 
-function htmlQuiz() {
+function htmlQuiz(title, choices, answer) {
     landingPage.setAttribute("style", "display:none;");
     questPage.setAttribute("style", "display:block;");
-    for (i=0; i < htmlQuestions.length; i++) {
-        question.innerHTML = htmlQuestions[i].title;
-        var newBtn0 = document.createElement("button");
-        newBtn0.innerHTML = htmlQuestions[i].choices[0];
-        questPage.appendChild(newBtn0);
-        // choice.innerHTML = htmlQuestions[i].choices[0];
-    }
+    
+    var i = 0; i < htmlQuestions.length;
+    question.innerHTML = htmlQuestions[i].title;
+
+
+    // for (var i=0; i < htmlQuestions.length; i++) {
+    //     question.innerHTML = htmlQuestions[i].title;
+    //     var newBtn = document.createElement("button");
+    //     newBtn.innerHTML = htmlQuestions[i].choices[0];
+    //     questPage.appendChild(newBtn);
+    // }
     
 }
 
