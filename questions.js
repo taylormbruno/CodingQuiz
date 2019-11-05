@@ -65,7 +65,7 @@ var cssQuestions = [
     {
         title: "External stylesheets are stored in what type of files?",
         choices:["CSS", "HTML", "JS", "MD"],
-        answer:
+        answer: "CSS"
     },
     {
         title: "What is the name of the property that is used to define the special state of an element?",
