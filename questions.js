@@ -1,53 +1,53 @@
 var htmlQuestions = [
     {
         title: "What tag is used to define an unordered list that is bulleted?",
-        choices: ["<s>", "<ul>", "<li>", "<u>"],
-        answer: "<ul>"
+        choices: ["&lt;s&gt;", "&lt;ul&gt;", "&lt;li&gt;", "&lt;u&gt;"],
+        answer: "&lt;ul&gt;"
     },
     {
        title: "What tag is used to define an interactive field where users can enter data?",
-       choices: ["<textarea>", "<dialog>", "<input>", "<datalist>"],
-       answer: "<input>"
+       choices: ["&lt;textarea&gt;", "&lt;dialog&gt;", "&lt;input&gt;", "&lt;datalist&gt;"],
+       answer: "&lt;input&gt;"
     },
     {
         title: "What tag is used to define a standard cell inside a table?",
-        choices: ["<td>", "<h1> to <h6>", "<footer>", "<button>"],
-        answer: "<td>"
+        choices: ["&lt;td&gt;", "&lt;h1&gt; to &lt;h6&gt;", "&lt;footer&gt;", "&lt;button&gt;"],
+        answer: "&lt;td&gt;"
     },
     {
         title: "What tag is used to render or transform text into an emphasized (italics) version?",
-        choices: ["<a>", "<strong>", "<em>", "<blockquote>"],
-        answer: "<em>"
+        choices: ["&lt;a&gt;", "&lt;strong&gt;", "&lt;em&gt;", "&lt;blockquote&gt;"],
+        answer: "&lt;em&gt;"
     },
     {
         title: "What tag is used to define a table or image notation?",
-        choices: ["<caption>", "<embed>", "<code>", "<!DOCTYPE>"],
-        answer: "<caption>"
+        choices: ["&lt;caption&gt;", "&lt;embed&gt;", "&lt;code&gt;", "&lt;!DOCTYPE&gt;"],
+        answer: "&lt;caption&gt;"
     },
     {
         title: "What tag is used to specify a section of text that provides an example of computer code?",
-        choices: ["<!DOCTYPE>", "<caption>", "<embed>", "<code>"],
-        answer: "<code>"
+        choices: ["&lt;!DOCTYPE&gt;", "&lt;caption&gt;", "&lt;embed&gt;", "&lt;code&gt;"],
+        answer: "&lt;code&gt;"
     },
     {
         title: "What tag is used to render or transform text into an important (bold) version?",
-        choices: ["<blockquote", "<em>", "<strong>", "<a>"],
-        answer: "<strong>"
+        choices: ["&lt;blockquote", "&lt;em&gt;", "&lt;strong&gt;", "&lt;a&gt;"],
+        answer: "&lt;strong&gt;"
     },
     {
         title: "What tag is used to specify a section of text that has been quoted from another source?",
-        choices: ["<strong>", "<blockquote", "<em>", "<a>"],
-        answer: "<blockquote>"
+        choices: ["&lt;strong&gt;", "&lt;blockquote", "&lt;em&gt;", "&lt;a&gt;"],
+        answer: "&lt;blockquote&gt;"
     },
     {
         title: "What tag is used to define a container for an external app or plug-in?",
-        choices: ["<caption>", "<code>", "<embed>", "<!DOCTYPE>"],
-        answer: "<embed>"
+        choices: ["&lt;caption&gt;", "&lt;code&gt;", "&lt;embed&gt;", "&lt;!DOCTYPE&gt;"],
+        answer: "&lt;embed&gt;"
     },
     {
         title: "What element is a container for all the head elements, and may include the document title, scripts, styles, meta information, and more?",
-        choices: ["<head></head>", "<br></br>", "<title></title>", "<body></body>"],
-        answer: "<head></head>"
+        choices: ["&lt;head&gt;&lt;/head&gt;", "&lt;br&gt;&lt;/br&gt;", "&lt;title&gt;&lt;/title&gt;", "&lt;body&gt;&lt;/body&gt;"],
+        answer: "&lt;head&gt;&lt;/head&gt;"
     },
 ];
 
@@ -84,13 +84,13 @@ var cssQuestions = [
     },
     {
         title: "Where in an HTML document is the correct place to refer to an external style sheet?",
-        choices:["<body>", "<head>", "At the end of the document", "External style sheets are not referenced in an HTML document"],
-        answer: "<head>"
+        choices:["&lt;body&gt;", "&lt;head&gt;", "At the end of the document", "External style sheets are not referenced in an HTML document"],
+        answer: "&lt;head&gt;"
     },
     {
         title: "Which HTML tag is used to define an internal style sheet?",
-        choices:["<css>", "<script>", "<style>", "Internal style sheets are not defined in HTML"],
-        answer: "<style>"
+        choices:["&lt;css&gt;", "&lt;script&gt;", "&lt;style&gt;", "Internal style sheets are not defined in HTML"],
+        answer: "&lt;style&gt;"
     },
     {
         title: "Which is the correct CSS syntax?",
@@ -152,7 +152,7 @@ var jsQuestions = [
     },
     {
         title: "Where is JavaSCript placed insde an HTML document or page?",
-        choices: ["In the <footer>", "In the <title> section", "In the <body> and <head> sections", "In the <meta> section"],
-        answer: "In the <body> and <head> sections"
+        choices: ["In the &lt;footer&gt;", "In the &lt;title&gt; section", "In the &lt;body&gt; and &lt;head&gt; sections", "In the &lt;meta&gt; section"],
+        answer: "In the &lt;body&gt; and &lt;head&gt; sections"
     },
 ];
