@@ -1,42 +1,56 @@
-var htmlLink = document.getElementById("htmlQues");
-var cssLink = document.getElementById("cssQues");
-var jsLink = document.getElementById("jsQues");
-var landingPage = document.getElementById("landingPage");
-var highScores = document.getElementById("highscores");
-var timer = document.getElementById("time");
-var questPage = document.getElementById("questPage");
-var question = document.getElementById("question");
-var choice0 = document.getElementById("choice0");
-var choice1 = document.getElementById("choice1");
-var choice2 = document.getElementById("choice2");
-var choice3 = document.getElementById("choice3");
 
+function setTime() {
+    var timerInterval = setInterval(function() {
+        timer--;
+        timeEl.textContent = "Time: " + timer;
+        if(timer === 0) {
+            clearInterval(timerInterval);
+        }
+    }, 1000);
+}
 
-function htmlQuiz(title, choices, answer) {
+function htmlQuiz() {
     landingPage.setAttribute("style", "display:none;");
     questPage.setAttribute("style", "display:block;");
     
+    
+    setTime();
+    
+
     var i = 0; i < htmlQuestions.length;
     question.innerHTML = htmlQuestions[i].title;
 
-
-    // for (var i=0; i < htmlQuestions.length; i++) {
-    //     question.innerHTML = htmlQuestions[i].title;
-    //     var newBtn = document.createElement("button");
-    //     newBtn.innerHTML = htmlQuestions[i].choices[0];
-    //     questPage.appendChild(newBtn);
-    // }
-    
+    for (var j=0; j < htmlQuestions[i].choices.length; j++) {
+        var newBtn = document.createElement("button");
+        var lineBreak = document.createElement("br");
+        newBtn.setAttribute("id", ("btn" + [j]));
+        newBtn.textContent = (htmlQuestions[i].choices[j]);
+        questPage.append(newBtn);
+        questPage.append(lineBreak);
+        newBtn.addEventListener("click", function(event) { 
+            if (event.target.textContent === htmlQuestions[i].answer) { 
+                var correctAnswer = document.createElement("h4");
+                correctAnswer.textContent = "Correct answer!";
+                questPage.append(correctAnswer);
+                i++;
+            } else {
+                var incorrectAnswer = document.createElement("h4");
+                incorrectAnswer.textContent = "Incorrect answer!";
+                questPage.append(incorrectAnswer);
+                timer = (timer - 15);
+            }
+        })
+    }
 }
 
-function cssQuiz() {
-    landingPage.setAttribute("style", "display:none;");
-    questPage.setAttribute("style", "display:block;");
+// function cssQuiz() {
+//     landingPage.setAttribute("style", "display:none;");
+//     questPage.setAttribute("style", "display:block;");
 
-}
+// }
 
-function jsQuiz() {
-    landingPage.setAttribute("style", "display:none;");
-    questPage.setAttribute("style", "display:block;");
+// function jsQuiz() {
+//     landingPage.setAttribute("style", "display:none;");
+//     questPage.setAttribute("style", "display:block;");
 
-}
+// }
