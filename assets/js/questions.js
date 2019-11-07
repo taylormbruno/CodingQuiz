@@ -1,3 +1,4 @@
+// all variables used in script.js
 var htmlLink = document.getElementById("htmlQues");
 var cssLink = document.getElementById("cssQues");
 var jsLink = document.getElementById("jsQues");
@@ -12,6 +13,7 @@ var btn2 = document.getElementById("btn2");
 var btn3 = document.getElementById("btn3");
 var timer = 150;
 
+// Questions for HTML quiz
 var htmlQuestions = [
     {
         title: "What tag is used to define an unordered list that is bulleted?",
@@ -65,6 +67,7 @@ var htmlQuestions = [
     },
 ];
 
+// Questions for CCS Quiz
 var cssQuestions = [
     {
         title: "What is the CSS property that sets the size of the whitespace outside the borders of the content?",
@@ -118,6 +121,7 @@ var cssQuestions = [
     },
 ];
 
+// Questions for JS Quiz
 var jsQuestions = [
     {
         title: "The condition in an if / else statement is enclosed within ____.",
