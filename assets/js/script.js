@@ -12,13 +12,16 @@ var quesCounter = 0;
 var timeEl = document.getElementById("time");
 var timer = 75;
 
+
 // time interval for all quizes
 function setTime() {
+    
     var timerInterval = setInterval(function() {
         timer--;
         timeEl.textContent = "Time: " + timer;
         if(timer === 0) {
             clearInterval(timerInterval);
+            getScores();
         }
     }, 1000);
 }
@@ -47,6 +50,7 @@ function htmlQuiz() {
 }
 
 function htmlAnswer() {
+    event.stopPropagation;
     console.log($(this.event.target).attr('data-attribute'));
     console.log(htmlCurrentQ.answer);
     if (parseInt($(this.event.target).attr('data-attribute')) == parseInt(htmlCurrentQ.answer)) {
@@ -57,10 +61,7 @@ function htmlAnswer() {
         htmlQuiz();
     } else {
         console.log('Wrong!');
-        $(questPage).append();
-        var incorrectAnswer = document.createElement("h4");
-        incorrectAnswer.textContent = "Incorrect answer!";
-        questPage.append(incorrectAnswer);
+        $('#questPage').append('<h4>Incorrect answer! -15 seconds </h4>');      
         timer = (timer - 15);
         quesCounter++;
         htmlCurrentQ = htmlQuestions[quesCounter];
@@ -78,6 +79,7 @@ function cssQuiz() {
     scorePage.setAttribute("style", "display:none;");
     questPage.setAttribute("style", "display:block;");
     
+    running = true;
     setTime();
 
     $('#questPage').empty().append('<h2>' + cssCurrentQ.title +'</h2>');
@@ -125,6 +127,7 @@ function jsQuiz() {
     scorePage.setAttribute("style", "display:none;");
     questPage.setAttribute("style", "display:block;");
     
+    running = true;
     setTime();
 
     $('#questPage').empty().append('<h2>' + jsCurrentQ.title +'</h2>');
