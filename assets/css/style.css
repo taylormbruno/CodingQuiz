@@ -38,9 +38,20 @@ img {
     width: 75%;
     margin: auto;
     display: none;
-
 }
-button {
+#enterInitial {
+    justify-content: center;
+    width: 75%;
+    margin: auto;
+    display: none;
+}
+#scorePage {
+    justify-content: center;
+    width: 75%;
+    margin: auto;
+    display: none;
+}
+button, #submit {
     color: white;
     background-color: #593093;
     margin: 10px 0px;
@@ -52,4 +63,48 @@ button {
 }
 h2 {
     margin: 20px 0px 10px 0px;
+}
+input {
+    margin: 10px 10px 10px 0px;
+    padding: 5px;
+    font-size: 16px;
+}
+#htmlScores {
+    width: 31%;
+    background: #F26526;
+    color: white;
+    float: left;
+    margin: 10px 5px;
+    padding-top: 10px;
+    text-align: center;
+}
+#cssScores {
+    width: 31%;
+    background: #23ABE2;
+    color: white;
+    float: left;
+    margin: 10px 5px;
+    padding-top: 10px;
+    text-align: center;
+}
+#jsScores {
+    width: 31%;
+    background: #F7DF1B;
+    color: white;
+    float: left;
+    margin: 10px 5px;
+    padding: 10px;
+    text-align: center;
+
+}
+caption {
+    color: black;
+}
+footer {
+    position: fixed !important;
+    bottom: 0 !important;
+    color: #555555;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center !important;
 }
